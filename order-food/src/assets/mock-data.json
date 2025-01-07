@@ -1,0 +1,115 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Món chính",
+      "description": "Các món chính đặc biệt",
+      "imageUrl": "https://example.com/images/main-course.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Khai vị",
+      "description": "Món khai vị hấp dẫn",
+      "imageUrl": "https://example.com/images/appetizer.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Tráng miệng",
+      "description": "Món tráng miệng ngọt ngào",
+      "imageUrl": "https://example.com/images/dessert.jpg"
+    }
+  ],
+  "dishes": [
+    {
+      "id": "101",
+      "name": "Phở bò",
+      "description": "Phở truyền thống với thịt bò tái chín.",
+      "price": 50000,
+      "imageUrl": "https://example.com/images/pho-bo.jpg",
+      "categoryId": "1",
+      "available": true,
+      "tags": ["traditional", "beef", "noodle"]
+    },
+    {
+      "id": "102",
+      "name": "Gà nướng mật ong",
+      "description": "Gà nướng sốt mật ong thơm ngon.",
+      "price": 70000,
+      "imageUrl": "https://example.com/images/ga-nuong.jpg",
+      "categoryId": "1",
+      "available": true,
+      "tags": ["grilled", "chicken"]
+    },
+    {
+      "id": "201",
+      "name": "Gỏi cuốn tôm thịt",
+      "description": "Gỏi cuốn với tôm và thịt, kèm nước chấm đặc biệt.",
+      "price": 30000,
+      "imageUrl": "https://example.com/images/goi-cuon.jpg",
+      "categoryId": "2",
+      "available": true,
+      "tags": ["fresh", "shrimp", "pork"]
+    },
+    {
+      "id": "301",
+      "name": "Chè trôi nước",
+      "description": "Chè trôi nước ngọt ngào với nước cốt dừa.",
+      "price": 25000,
+      "imageUrl": "https://example.com/images/che-troi-nuoc.jpg",
+      "categoryId": "3",
+      "available": true,
+      "tags": ["dessert", "sweet"]
+    }
+  ],
+  "users": [
+    {
+      "id": "u001",
+      "name": "Nguyễn Văn A",
+      "email": "nguyenvana@example.com",
+      "phoneNumber": "0123456789",
+      "address": "123 Đường ABC, Quận 1, TP.HCM",
+      "role": "customer"
+    },
+    {
+      "id": "u002",
+      "name": "Trần Thị B",
+      "email": "tranthib@example.com",
+      "phoneNumber": "0987654321",
+      "address": "456 Đường XYZ, Quận 2, TP.HCM",
+      "role": "customer"
+    },
+    {
+      "id": "u003",
+      "name": "Admin",
+      "email": "admin@example.com",
+      "phoneNumber": "0000000000",
+      "address": "N/A",
+      "role": "admin"
+    }
+  ],
+  "cart": [
+    {
+      "userId": "u001",
+      "items": [
+        { "dishId": "101", "quantity": 2 },
+        { "dishId": "201", "quantity": 1 }
+      ],
+      "totalAmount": 130000
+    }
+  ],
+  "orders": [
+    {
+      "id": "o001",
+      "userId": "u001",
+      "items": [
+        { "dishId": "101", "quantity": 1 },
+        { "dishId": "301", "quantity": 2 }
+      ],
+      "totalAmount": 100000,
+      "status": "pending",
+      "orderDate": "2025-01-07",
+      "deliveryDate": null,
+      "paymentStatus": "unpaid"
+    }
+  ]
+}
