@@ -13,4 +13,12 @@ export class MockDataService {
   getMockData(): Observable<any> {
     return this.http.get(this.dataUrl);
   }
+
+  setMockData(newData: any): Observable<any> {
+    return new Observable((observer) => {
+      console.log('Mock data set successfully:', newData);
+      observer.next(newData);
+      observer.complete();
+    });
+  }
 }
